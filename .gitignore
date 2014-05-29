@@ -1,0 +1,4 @@
+# ignore matlab use files
+    *.asv
+# ignore old stuff
+    old/
