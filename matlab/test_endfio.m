@@ -1,6 +1,6 @@
-% clear tape ans
-% tape = endfi('..\ref\s-CH4.ENDFB-VII');
-% endfo(tape,'s-CH4')
+clear tape ans
+tape = endfi('..\ref\s-CH4.ENDFB-VII');
+endfo(tape,'s-CH4')
 
 a = tape{1,2}{1,2}{1,2}{1,30};
 b = transpose(tape{1,2}{1,2}{1,2}{1,31});
