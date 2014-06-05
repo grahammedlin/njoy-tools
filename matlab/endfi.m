@@ -498,8 +498,9 @@ i = 1;
 for m=q
   temp1 = file{1,n}((11*m-10):(11*m));
   % Matlab doesn't recoginze NNN+N as exponential
-  temp2 = union(strfind(temp1,'+'),strfind(temp1,'-'));
-  % if null or negative number
+  temp2 = union(strfind(temp1(2:length(temp1)),'+'),strfind(temp1(2:length(temp1)),'-'));
+  temp2 = temp2+1;
+  % if null, integer, negative integer
   if isempty(temp2) || isstrprop(temp1(temp2-1), 'wspace')
      temp6 = str2double(temp1);
   % else exponential
